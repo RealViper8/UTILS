@@ -26,5 +26,7 @@ echo Running Python script...
 %@EndCatch@%
 
 if errorlevel 1 (
-    echo An error ocurred !
+    exit
+) else (
+    exit
 )

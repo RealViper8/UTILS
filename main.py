@@ -193,10 +193,14 @@ class App:
                     print("proxy                Use and change proxy when browsing with utils")
                     print("host-l <PORT>        Create a tcp server on localhost !")
                     print("host-w               Create a tcp server online !")
+                    print("encoder              Launch the golang base64 encoder/decoder")
                     print("exit                 Exits with code 0")
                     if config["settings.menu"]["database"] == "True":
                         print("database             Change to the database mode")
                     print()
+                elif I == "encoder":
+                    os.system("start encoder.exe")
+                    print("\n"+colours.OKCYAN+"Launched the Encoder/Decoder"+colours.ENDC+"\n")
                 elif I == "web-host":
                     app = Flask(__name__)
                     
