@@ -1,68 +1,64 @@
----
 name: Bug Report
+description: File a bug report
 title: "[Bug]: "
-labels: bug
-description: Report broken or incorrect behaviour
-about: Report broken or incorrect behaviour
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
 body:
   - type: markdown
     attributes:
-      value: >
-        Thanks for taking the time to fill out a bug.
-        Please note that this form is for bugs only!
-  - type: textarea
-    id: what-happened
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Reproduction Steps
-      description: >
-         What you did to make it happen.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Expected behavior
-      description: >
-         A clear and concise description of what you expected to happen.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Screenshots
-      description: >
-         If applicable, add screenshots to help explain your problem.
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
     validations:
       required: false
   - type: textarea
+    id: what-happened
     attributes:
-      label: System Information
-      description: please fill your system informations
-      value: >
-        Operating System : [e.g. Windows 11]
-
-        Python version : [e.g. Python 3.6]
-
-        App version / Branch : [e.g. latest, V2.0, master, develop]
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
+    id: version
     attributes:
-      label: Checklist
-      description: >
-        Let's make sure you've properly done due diligence when reporting this issue!
+      label: Version
+      description: What version of our software are you running?
       options:
-        - label: I have searched the open issues for duplicates.
-          required: true
-        - label: I have shown the entire traceback, if possible.
-          required: true
-  - type: textarea
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
     attributes:
-      label: Additional Context
-      description: Add any other context about the problem here.
-
----
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
