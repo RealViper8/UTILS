@@ -24,10 +24,9 @@ The modules that require to get you started :
 To begin using this Terminal you will need to :
 
 On Windows
-`diff
-  curl //RealViper8/UTILS/archive/refs/heads/main.zip`
+`curl //RealViper8/UTILS/archive/refs/heads/main.zip`
   Unzip the File
-  In cmd `python main.py` or open run.bat
+  In cmd `python main.py` or in cmd `start run.bat`
 <br>If something unexpected happens and gives you an error then make a new issue
 
 ## Arguments
