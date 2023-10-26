@@ -1,4 +1,6 @@
 ---
+name: Ask a question
+about: Join my discord and ask questions about this project
 blank_issues_enabled: false
 contact_links:
   - name: Ask a question
