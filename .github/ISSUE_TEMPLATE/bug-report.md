@@ -3,6 +3,7 @@ name: Bug Report
 title: "[Bug]: "
 labels: bug
 description: Report broken or incorrect behaviour
+about: Report a broken or a incorrect behaviour of this project
 body:
   - type: markdown
     attributes:
