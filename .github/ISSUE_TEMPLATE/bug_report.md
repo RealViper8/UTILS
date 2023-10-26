@@ -1,3 +1,4 @@
+---
 name: Bug Report
 title: "[Bug]: "
 labels: bug
@@ -62,3 +63,5 @@ body:
     attributes:
       label: Additional Context
       description: Add any other context about the problem here.
+
+---
