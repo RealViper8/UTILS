@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static',      filename='css/template.css')}}">
+<title>Help</title>
+<a href="https://github.com/RealViper8" class="logo" target="_blank">
+<link rel="icon" type="image/png" sizes="128x128" href="tab-icon.ico">
+<img style="width: 64px; height: 64px;" src="https://img.icons8.com/?size=1024&id=WbRVMGxHh74X&format=png" alt="">
+</a>
+
+
+<div class="sec-center">
+    <div class="text">
+      <h1>Help</h1>
+      <p style="color: cyan;">Here is the help page for Utilities Terminal CLI</p>
+    </div>
     
-</body>
-</html>
+    <section class="key">
+      <h2 style="color: white; text-align: left;">Start Arguments</h2>
+      <p style="color: white; text-align: center; font-size: 13px;">You can use this arguments by opening a terminal in the current project directory and typing python main.py <-argument-></argument></p>
+      <ul>
+        <li>--help : Shows the rest of arguments that you can use</li>
+        <li>--database : Switches directly to the database mode</li>
+        <li>--gcw <-WlanSSID-> : Shows you the passwort of the saved wifi</li>
+        <li>--show-profiles : Shows you all the saved wifi profiles</li>
+        <li>--engine : Start the 3d engine that lets you view some models in assets/roboter.obj etc</li>
+        <li>--wsl : Lets you start the wsl aka Distro if you have it installed</li>
+      </ul>
+      <p style="color: greenyellow;">More info at: <a href="https://github.com/RealViper8/UTILS#readme">github</a><a href="https://github.com/RealViper8/UTILS/blob/main/README.md#utils">readme</a></p>
+    </section>
+  
+    <section class="key">
+      <h2 style="color: white; text-align: left;">Commands</h2>
+      <p style="color: whitesmoke; text-align: left;">Our terminal commands are designed and easy to understand for a diverse range of users</p>
+      <ul>
+        <li>help                    This command shows you the list of available commands</li>
+        <li>dw <-URL->              Download File using url and proxy if needed</li>
+        <li>pt <-TEXT->             Change the 'Terminal Text'</li>
+        <li>iwshow                  Shows the information that websites would see or could get from you</li>
+        <li>proxy                   Use and change proxy when browsing with utils</li>  
+        <li>host-l <-PORT->         Host a local TCP Server with a custom port</li>
+        <li>host-w                  Host a wireless local area server</li>
+        <li>encoder                 Launch golang base64 encoder/decoder</li>
+        <li>exit                    Exits with code 0</li>
+        <li>database                Change to database mode</li>
+      </ul>
+    </section>
+
+    <section class="key">
+        <h2 style="color: white; text-align: left;">Fast</h2>
+        <p style="color: whitesmoke; text-align: left;">Our terminal is also very fast since it doesnt only use python</p>
+        <ul>
+          <li>Golang : This code language is used for user input sometimes and for simple stuff</li>
+          <li>Python : This is the main core of the app</li>
+          <li>HTML : This is used for the web-host command </li>
+          <li>JS : Linked with HTML</li>
+          <li>CSS : Get a bit of style for the template (web-host)</li>  
+          <li>BAT : Used only for windows</li>
+        </ul>
+      </section>
+  
+    <section class="key">
+      <h2 style="color: white; text-align: center;">Get Started Today</h2>
+      <p style="color: #0699a3; text-align: left;""> Join the ranks of innovators and creators who are leveraging the power of our terminal hosting service. Whether you're a seasoned pro or a beginner, we provide the tools and resources to help you succeed in the digital realm. </p>
+      <p style="color: rgb(10, 155, 10); text-align: left;">Ready to get started? Download now and embark on your digital journey!</p>
+      <button style="background-color: #98930f; border-radius: 5px; border-style: ridge; border-color: #0699a3;"><a href="https://github.com/RealViper8/UTILS">Download Now</a></button>
+    </section>
+  
+    <br>
+  
+    <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+    <label class="for-dropdown" for="dropdown"> Menu <i class="uil uil-arrow-down"></i></label>
+    <div class="section-dropdown"> 
+      <a href="https://github.com/RealViper8/UTILS/releases/tag/v1.0">Download <i class="uil uil-arrow-right"></i></a>
+      <a href="{{ url_for('home') }}">Home <i class="uil uil-arrow-right"></i></a>
+      <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+      <label class="for-dropdown-sub" for="dropdown-sub"> -> Project <- <i class="uil uil-plus"></i></label>
+      <div class="section-dropdown-sub"> 
+        <a href="https://github.com/RealViper8/UTILS">Github <i class="uil uil-arrow-right"></i></a>
+      </div>
+      <!-- <a href="{{ url_for('credits') }}">Credits <i class="uil uil-arrow-right"></i></a> -->
+      <!-- a href="{{ url_for('contact') }}">Contact <i class="uil uil-arrow-right"></i></a> -->
+    </div>
+</div>
+
+<div class="cursor"></div>
+
+<script type="text/javascript">
+    const cursor = document.querySelector(".cursor")
+    var timeout;
+  
+    //follow
+    document.addEventListener("mousemove",(e) => {
+      let x = e.clientX;
+      let y = e.clientY;
+    
+      cursor.style.top = y + "px";
+      cursor.style.left = x + "px";
+      cursor.style.display = "block";
+  
+      function mouseStopped() {
+        cursor.style.display = "none";
+      }
+      clearTimeout(timeout)
+      timeout = setTimeout(mouseStopped,1500);
+    });
+  
+    document.addEventListener("mouseout", () => {
+      cursor.style.display = "none";
+    })
+</script>
+
+<footer>
+    <p>&copy; 2023 Terminal Hosting Service</p>
+</footer>

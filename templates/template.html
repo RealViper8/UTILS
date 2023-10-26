@@ -3,6 +3,7 @@
 <input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
 <!-- <label for="dark-light"></label> -->
 
+<title>UTILS</title>
 <div class="light-back"></div> 
 <link rel="stylesheet" href="{{ url_for('static',      filename='css/template.css')}}">
 <a href="https://github.com/RealViper8" class="logo" target="_blank">
@@ -42,7 +43,7 @@
     <h2 style="color: white; text-align: center;">Get Started Today</h2>
     <p style="color: #0699a3; text-align: left;""> Join the ranks of innovators and creators who are leveraging the power of our terminal hosting service. Whether you're a seasoned pro or a beginner, we provide the tools and resources to help you succeed in the digital realm. </p>
     <p style="color: rgb(10, 155, 10); text-align: left;">Ready to get started? Download now and embark on your digital journey!</p>
-    <button style="background-color: #98930f; border-radius: 5px; border-style: ridge; border-color: #0699a3;"><a href="https://github.com/RealViper8/UTILS">Download Now</a></button>
+    <button style="background-color: #98930f; border-radius: 5px; border-style: ridge; border-color: #0699a3;"><a href="https://github.com/RealViper8/UTILS/releases">Download Now</a></button>
   </section>
 
   <br>
@@ -50,15 +51,15 @@
   <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
   <label class="for-dropdown" for="dropdown"> Menu <i class="uil uil-arrow-down"></i></label>
   <div class="section-dropdown"> 
-    <a href="//RealViper8/UTILS/archive/refs/heads/main.zip">Download <i class="uil uil-arrow-right"></i></a>
+    <a href="https://github.com/RealViper8/UTILS/releases">Download <i class="uil uil-arrow-right"></i></a>
     <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
     <label class="for-dropdown-sub" for="dropdown-sub"> -> Project <- <i class="uil uil-plus"></i></label>
     <div class="section-dropdown-sub"> 
       <a href="https://github.com/RealViper8/UTILS">Github <i class="uil uil-arrow-right"></i></a>
       <a href="{{ url_for('help') }}">Help <i class="uil uil-arrow-right"></i></a>
     </div>
-    <a href="{{ url_for('credits') }}">Credits <i class="uil uil-arrow-right"></i></a>
-    <a href="{{ url_for('contact') }}">Contact <i class="uil uil-arrow-right"></i></a>
+    <!-- <a href="{{ url_for('credits') }}">Credits <i class="uil uil-arrow-right"></i></a> -->
+    <!-- <a href="{{ url_for('contact') }}">Contact <i class="uil uil-arrow-right"></i></a> -->
   </div>
 </div>
 
@@ -90,5 +91,5 @@
 </script>
 
 <footer>
-  <p>&copy; 2023 Terminal Hosting Service</p>
+  <p style="text-align: end;">&copy; 2023 Terminal Hosting Service</p>
 </footer>
