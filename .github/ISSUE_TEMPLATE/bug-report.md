@@ -7,7 +7,7 @@ assignees: ''
 
 body:
   - type: markdown
-    attributes:
+     attributes:
       value: "## Welcome !"
   - type: markdown
   attributes:
