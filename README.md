@@ -6,8 +6,11 @@ This Terminal can be configured and can be added a proxy
 
 ## Commands
 New commands will come out every update :
+
   -> web-host: hosts a webserver
+  
   -> host-l: hosts an Local Area Network TCP server
+  
   -> host-w: hosts an Wireless Local Area Network TCP server
 
 ## Modules
@@ -15,17 +18,21 @@ The modules that require to get you started :
   *  Flask
   *  tqdm
   *  configparser
-All the modules can be found in requirements.txt
+<br> All the other required modules can be found in the file requirements.txt
 
 ## Setup
 To begin using this Terminal you will need to :
-  1. Download the git files
-  2. Download the requirements you can do this on windows by typing in your terminal python pip install -r requirements.txt
-  3. Run the main.py and enjoy
+
+On Windows
+`diff
+  curl //RealViper8/UTILS/archive/refs/heads/main.zip`
+  Unzip the File
+  In cmd `python main.py` or open run.bat
+<br>If something unexpected happens and gives you an error then make a new issue
 
 ## Arguments
-This app also has arguments that you can start with like:
-  python main.py --help: to show you the list of available commands
+This app also has arguments that you can start with like: <br>
+`python main.py --help: to show you the list of available commands`
 
 ## Credits
 You are allowed to modify it and distribute but please dont make money of it and give credits !
