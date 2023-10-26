@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
+<!-- <label for="dark-light"></label> -->
+
+<div class="light-back"></div> 
+<link rel="stylesheet" href="{{ url_for('static',      filename='css/template.css')}}">
+<a href="https://github.com/RealViper8" class="logo" target="_blank">
+<link rel="icon" type="image/png" sizes="128x128" href="tab-icon.ico">
+<img style="width: 64px; height: 64px;" src="https://img.icons8.com/?size=1024&id=WbRVMGxHh74X&format=png" alt="">
+</a>
+
+<div class="sec-center">
+  <div class="text">
+    <h1>UTILS</h1>
+    <p style="color: cyan;">Utils is a lightweight terminal that lets you use commands or host server easier than before without needing the required knowdeledge and provides it for free !</p>
+  </div>
+  
+  <section class="key">
+    <h2 style="color: white; text-align: left;">Features</h2>
+    <ul>
+      <li>Host Websites: Deploy and manage your websites with ease.</li>
+      <li>Run TCP Servers: Create, configure, and manage TCP servers for various applications.</li>
+      <li>Custom Scripts: Execute custom scripts and automate tasks for efficiency.</li>
+      <li>Secure and Reliable: Your data is protected since its locally, and uptime is our priority.</li>
+      <li>Scalability: Scale your resources as your projects grow.</li>
+    </ul>
+    <p style="color: greenyellow;">More info at: <a href="https://github.com/RealViper8/UTILS#readme">github</a><a href="https://github.com/RealViper8/UTILS/blob/main/README.md#utils">readme</a></p>
+  </section>
+
+  <section class="key">
+    <h2 style="color: white; text-align: left;">Who Can Benefit?</h2>
+    <p style="color: whitesmoke; text-align: left;">Our terminal hosting service is designed for a diverse range of users, including:</p>
+    <ul>
+      <li>Web Developers: Host and manage your web projects effortlessly.</li>
+      <li>Network Administrators: Optimize and manage your TCP servers and networks seamlessly.</li>
+      <li>Tech Enthusiasts: Explore, learn, and experiment with various tools and applications.</li>
+    </ul>
+  </section>
+
+  <section class="key">
+    <h2 style="color: white; text-align: center;">Get Started Today</h2>
+    <p style="color: #0699a3; text-align: left;""> Join the ranks of innovators and creators who are leveraging the power of our terminal hosting service. Whether you're a seasoned pro or a beginner, we provide the tools and resources to help you succeed in the digital realm. </p>
+    <p style="color: rgb(10, 155, 10); text-align: left;">Ready to get started? Download now and embark on your digital journey!</p>
+    <button style="background-color: #98930f; border-radius: 5px; border-style: ridge; border-color: #0699a3;"><a href="https://github.com/RealViper8/UTILS">Download Now</a></button>
+  </section>
+
+  <br>
+
+  <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+  <label class="for-dropdown" for="dropdown"> Menu <i class="uil uil-arrow-down"></i></label>
+  <div class="section-dropdown"> 
+    <a href="//RealViper8/UTILS/archive/refs/heads/main.zip">Download <i class="uil uil-arrow-right"></i></a>
+    <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+    <label class="for-dropdown-sub" for="dropdown-sub"> -> Project <- <i class="uil uil-plus"></i></label>
+    <div class="section-dropdown-sub"> 
+      <a href="https://github.com/RealViper8/UTILS">Github <i class="uil uil-arrow-right"></i></a>
+      <a href="{{ url_for('help') }}">Help <i class="uil uil-arrow-right"></i></a>
+    </div>
+    <a href="{{ url_for('credits') }}">Credits <i class="uil uil-arrow-right"></i></a>
+    <a href="{{ url_for('contact') }}">Contact <i class="uil uil-arrow-right"></i></a>
+  </div>
+</div>
+
+<div class="cursor"></div>
+
+<script type="text/javascript">
+  const cursor = document.querySelector(".cursor")
+  var timeout;
+
+  //follow
+  document.addEventListener("mousemove",(e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+  
+    cursor.style.top = y + "px";
+    cursor.style.left = x + "px";
+    cursor.style.display = "block";
+
+    function mouseStopped() {
+      cursor.style.display = "none";
+    }
+    clearTimeout(timeout)
+    timeout = setTimeout(mouseStopped,1500);
+  });
+
+  document.addEventListener("mouseout", () => {
+    cursor.style.display = "none";
+  })
+</script>
+
+<footer>
+  <p>&copy; 2023 Terminal Hosting Service</p>
+</footer>
