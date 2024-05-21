@@ -34,4 +34,4 @@ This app also has arguments that you can start with like: <br>
 `python main.py --help: to show you the list of available commands`
 
 ## Credits
-You are allowed to modify it and distribute but please dont make money of it and give credits !
+You are allowed to modify it and distribute but please dont sell it since its free !
